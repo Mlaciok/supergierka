@@ -21,9 +21,8 @@ public class PlayerShooting : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
-
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * bulletSpeed;
-        
+        bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.up * 10;
+
     }
 }
