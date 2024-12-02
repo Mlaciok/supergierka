@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -103365914261037874}
   m_Layer: 0
   m_Name: Walk_0
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,5 +99,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716411c73090fa048a9f7ec81d1fbb2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1822354287302460572, guid: 6d9025d4787dfa9458b6949a43a6cdec, type: 3}
   speed: 2

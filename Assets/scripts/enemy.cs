@@ -22,8 +22,9 @@ public class enemy : MonoBehaviour
         for (int i = 0; i < NuberOfZombies; i++)
         {
             Vector2 randomPosition = (Vector2)player.position + Random.insideUnitCircle * spawnRadius;
-            Instantiate(enemys, new Vector3(randomPosition.x, randomPosition.y, 0), Quaternion.identity);
-
+            //GameObject zombie = 
+                Instantiate(enemys, new Vector3(randomPosition.x, randomPosition.y, 0), Quaternion.identity);
+            //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerShooting>().zombies.Add(zombie);
             EnemyMovement movement = enemys.GetComponent<EnemyMovement>();
             if (movement != null)
             {
